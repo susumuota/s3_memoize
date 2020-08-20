@@ -21,6 +21,8 @@ Make test.py.
 
 .. code:: python
 
+   from s3_memoize import s3_fifo_cache, s3_lru_cache
+
    BUCKET_NAME='mybucketname'
 
    @s3_fifo_cache(maxsize=2, typed=False, bucket_name=BUCKET_NAME)
