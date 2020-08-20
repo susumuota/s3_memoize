@@ -6,18 +6,20 @@ Memoization function decorators using Amazon S3 for Python
 Install
 -------
 
-::
+.. code:: sh
 
    pip install s3-memoize
 
 Usage
 -----
 
-Setup AWS credentials.
+Setup AWS credentials (e.g. ``myprofile``).
+
+Make a S3 bucket (e.g. ``mybucketname``).
 
 Make test.py.
 
-.. code:: test.py
+.. code:: python
 
    BUCKET_NAME='mybucketname'
 
@@ -46,7 +48,7 @@ Make test.py.
 
 Run.
 
-::
+.. code:: sh
 
    AWS_PROFILE=myprofile python test.py
 
